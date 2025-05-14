@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <main>
+
+        <section>
+            <header>
+                <h2>JOKENPÔ</h2>
+            </header>
+            <p>Escolha uma opção</p>
+            <article id="opcaoJogador">
+                <img onclick="jogarJokenpo(0)" src="assets/pedra.png"/>
+                <img onclick="jogarJokenpo(1)" src="assets/papel.png"/>
+                <img onclick="jogarJokenpo(2)" src="assets/tesoura.png"/>
+            </article>
+
+            <p>Escolha do Robô</p>
+
+            <article>
+                <img  class="naoSelecionada" id="roboPedra" src="assets/pedra.png"/>
+                <img  class="naoSelecionada" id="roboPapel" src="assets/papel.png"/>
+                <img  class="naoSelecionada" id="roboTesoura" src="assets/tesoura.png"/>
+            </article>
+            
+            <div class="box-resultado">
+            <p id="resultado" class="resultado"></p>
+        </div>    
+        </section>
+
+    </main>
+    
+    <script src="scripts/jokenpo.js"></script>
+</body>
+</html>
